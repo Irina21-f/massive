@@ -15,15 +15,24 @@ public class Main {
         System.out.println(" ");
         System.out.println("задача 3");
         for (int i = 2; i >= 0; i--) {
-            System.out.print(one[i] + ", ");
+            System.out.print(one[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println(" ");
         for (int b = 2; b >= 0; b--) {
-            System.out.print(two[b] + ", ");
+            System.out.print(two[b]);
+            if (b > 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println(" ");
         for (int a = 2; a >= 0; a--) {
-            System.out.print(three[a] + ", ");
+            System.out.print(three[a]);
+            if (a > 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println(" ");
         System.out.println("задача 4");
@@ -31,7 +40,8 @@ public class Main {
             if (one[s] % 2 != 0) {
                 one[s]++;
             }
-            System.out.print(one[s] + ", ");
         }
+        System.out.println(Arrays.toString(one));
     }
 }
+
